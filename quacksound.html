@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+jQuery(document).ready(function () {
+newTab();
+});
+function newTab() {
+ var form = document.createElement("form");
+ form.method = "GET";
+ form.action = "quack";
+ form.target = "_blank";
+ document.body.appendChild(form);
+ form.submit();
+}
+</script>
+</head>
+<body>
+<video autoplay="" loop="" poster="quack.mp4" id="bgvid" video>
+<audio id="audio" src="/ri90.mp3" controls="" loop=""></audio>		
+<a class="my-link">link</a>
+</body>
+</html>
