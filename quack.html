@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+jQuery(document).ready(function () {
+newTab();
+});
+
+function newTab() {
+ var form = document.createElement("form");
+ form.method = "GET";
+ form.action = "tomicktwo.me/quack";
+ form.target = "_blank";
+ document.body.appendChild(form);
+ form.submit();
+}
+</script>
+</head>
+<body>
+<iframe width="1920" height="1080" src="https://www.youtube.com/embed/9rtCibtplsw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<a class="my-link">link</a>
+</body>
+</html>
